@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/dancing-script');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: 'DM Mono', monospace;
+    background-color: #000000;
+}
+.container{
+    width: 100vw;
+}
+
+
+
+/* =============================================== navbar section =========================================== */
+/* .container{
+    100vw;
+} */
+
+.navbar-container{
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar-logo h1{
+    font-family: 'Dancing Script', sans-serif;
+    margin-left: 80px;
+    margin-top: 30px;
+    color:linear-gradient(90deg,#ff8a00,#e52e71); ;
+    
+}
+
+.navbar-logo h1::first-letter {
+    font-size: 200%;
+    color: #2596be;
+  }
+
+.navbar-logo img{
+    height: 4.5vh;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.navbar-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-right: 120px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ffffff;
+  
+    
+}
+.item{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-items li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* ================================= About Section ========================================================= */
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* font-family: 'Dancing Script', sans-serif; */
+}
+
+.about-left img{
+    /* height: 55vh; */
+    margin-top: 40px;
+    /* width: 20vw; */
+    height: 65vh;
+    width: 25vw;
+    margin-right: 20px;
+}
+
+.about-right{
+    height: 70vh;
+    width: 40%;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.about-right h5{
+    margin-top: 110px;
+    color: var(--primary-light);
+    font-size:1.6rem;
+}
+
+.about-right h2{
+    line-height: 1px;
+    color: var(--white);
+    font-size: 3.6rem;
+    /* border: 2px solid white; */
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+.about-right p{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.about-button button{
+    margin-top: 50px;
+    background-color:var(--primary-light);
+    padding: 15px 50px;
+    color: var(--white);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* =========================================card section =============================== */
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 50px;
+    /* background-image: url(./images/portfolio.png); */
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card {
+    height: 350px;
+    width: 450px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;  
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    padding: 50px 0px;
+   }
+
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.card-header {
+    margin-bottom: auto;
+}
+
+.card-header p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.card-image{
+    padding: 20px;
+}
+.card-image img{
+    height: 250px;
+    width: 380px;
+    /* margin-left: 15px; */
+}
+
+
+.author-name-prefix {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+    padding-left: 20px;
+}
+
+
+.button {
+    /* margin: 1rem 0 2rem;
+    padding: .5rem 0 1rem;
+    line-height: 2;
+    margin-bottom: 0; */
+    margin-left: 20px;
+    padding: .5rem 0 1rem;
+    line-height: 2;
+    margin-bottom: 2px;
+}
+
+.button a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: .5rem;
+    color: #7a7a8c;
+    text-transform: uppercase;
+    font-size: .66rem;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+    /* padding: .2rem .85rem .25rem; */
+    padding: 10px 20px;
+    position: relative;
+}
+
+.button a:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* -webkit-box-decoration-break: clone; */
+    background-clip: text;
+    border-color: #000000;
+}
+
+
+/* ============================================ Fade In fade out-============================ */
+
+
+
+.about-right h5 {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .about-right h5::before {
+    content: "Hello, I'm Akshay Barapatre";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #17FEFF;
+    overflow: hidden;
+    color: #17FEFF;
+    animation: load91371 5s linear infinite;
+   }
+   
+   @keyframes load91371 {
+    0%,10%,100% {
+     width: 0;
+    }
+   
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+     border-right-color: transparent;
+    }
+   
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+     border-right-color: #17FEFF;
+    }
+   
+    60%, 80% {
+     width: 380px;
+    }
+   }
+
+
+   .project-heading h1::first-letter {
+    font-size: 200%;
+    color: #2596be;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+
+  .project-heading h1{
+    margin-top: 100px;
+  }
+
+.footer h1::first-letter {
+    font-size: 200%;
+    color: #2596be;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+
+
+
