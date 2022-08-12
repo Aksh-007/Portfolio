@@ -8,10 +8,11 @@ body {
     color: white;
     font-family: 'DM Mono', monospace;
     background-color: #000000;
+    overflow-x: hidden;
 }
-.container{
+/* .container{
     width: 100vw;
-}
+} */
 
 
 
@@ -147,7 +148,7 @@ body {
 
 .card {
     height: 350px;
-    width: 450px;
+    width: 430px;
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
