@@ -87,6 +87,12 @@ body {
     height: 65vh;
     width: 25vw;
     margin-right: 20px;
+   
+   
+}
+.about-left img:hover{
+    transition: all 0.5s ease-in-out 0s;
+    transform: scale(1);
 }
 
 .about-right{
